@@ -26,11 +26,10 @@ class App extends Component {
   }
 
   parentAddBook(newBook) {
-    const books = this.state.books;
-    console.log(books);
-    books.push(newBook);
-    this.setState({
-      books: books
+    addBookToFakeXHR(newBook).then(books => {
+      this.setState({
+        books: books
+      });
     });
   }
 

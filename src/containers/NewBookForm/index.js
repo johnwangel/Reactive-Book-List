@@ -32,6 +32,11 @@ class NewBookForm extends Component {
       title: this.state.newTitle,
       author: this.state.newAuthor
     });
+
+    this.setState({
+      newTitle: '',
+      newAuthor: ''
+    });
   }
 
   render() {

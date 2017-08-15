@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import App from '../../components/Header';
 import Book from '../../components/Book';
-import './styles.css';
 
 class BookList extends Component {
   constructor(props) {
